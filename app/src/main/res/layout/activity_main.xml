@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:text="Killing Sangmin !"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:src="@drawable/sangminface"
+        android:id="@+id/sangmin"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/sangmin2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:adjustViewBounds="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:id="@+id/sangmin2"
+        app:layout_constraintLeft_toRightOf="@id/sangmin"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        android:src="@drawable/whoareyou"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:adjustViewBounds="true"
+        />
+
+    <ImageView
+        android:id="@+id/killsangmin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/killsangmin"
+        app:layout_constraintTop_toBottomOf="@id/sangminexplain"
+        app:layout_constraintBottom_toTopOf="@id/killsangminexplain"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="김상민을 죽이자!"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:id="@+id/killsangminexplain"
+        app:layout_constraintTop_toBottomOf="@id/killsangmin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/kyw"
+        />
+    <Button
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sangminexplain"
+        app:layout_constraintTop_toBottomOf="@id/sangmin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="김상민 와꾸 모음집"
+        android:gravity="center"
+        app:layout_constraintRight_toLeftOf="@id/sangmin2explain"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="김상민, 그는 누구인가?"
+        android:id="@+id/sangmin2explain"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/sangmin2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/sangminexplain"
+        android:textColor="#000000"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Made by Kyw"
+        android:id="@+id/kyw"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="right"/>
+</android.support.constraint.ConstraintLayout>
