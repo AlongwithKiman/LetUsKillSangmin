@@ -2,7 +2,9 @@
 ==============
 <div style="text-align: right"> 2019.05.19 </div>
 <div style="text-align: right"> SNUCSE 18 김연웅 </div>
+<br> <br>
 1. 개요<br>
+
 이 프로젝트는 쪼렙 안드로이드 스터디 활동의 일환으로, 좀 더 효율적인 학습을 위해 시작되었습니다. 사용할 만 한 App을 제작 및 유지하는 것이 최종 목표입니다.
 
 2. 목표<br>
